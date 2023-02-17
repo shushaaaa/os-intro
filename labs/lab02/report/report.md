@@ -1,8 +1,9 @@
+
 ---
 ## Front matter
-title: "Шаблон отчёта по лабораторной работе"
-subtitle: "Простейший вариант"
-author: "Дмитрий Сергеевич Кулябов"
+title: "Отчёт по лабораторной работе №2"
+subtitle: "Операционные системы"
+author: "Норсоян Шушаник Гагиковна"
 
 ## Generic otions
 lang: ru-RU
@@ -23,12 +24,12 @@ papersize: a4
 documentclass: scrreprt
 ## I18n polyglossia
 polyglossia-lang:
-  name: russian
-  options:
-	- spelling=modern
-	- babelshorthands=true
+name: russian
+options:
+- spelling=modern
+- babelshorthands=true
 polyglossia-otherlangs:
-  name: english
+name: english
 ## I18n babel
 babel-lang: russian
 babel-otherlangs: english
@@ -45,12 +46,12 @@ monofontoptions: Scale=MatchLowercase,Scale=0.9
 biblatex: true
 biblio-style: "gost-numeric"
 biblatexoptions:
-  - parentracker=true
-  - backend=biber
-  - hyperref=auto
-  - language=auto
-  - autolang=other*
-  - citestyle=gost-numeric
+- parentracker=true
+- backend=biber
+- hyperref=auto
+- language=auto
+- autolang=other*
+- citestyle=gost-numeric
 ## Pandoc-crossref LaTeX customization
 figureTitle: "Рис."
 tableTitle: "Таблица"
@@ -61,57 +62,56 @@ lolTitle: "Листинги"
 ## Misc options
 indent: true
 header-includes:
-  - \usepackage{indentfirst}
-  - \usepackage{float} # keep figures where there are in the text
-  - \floatplacement{figure}{H} # keep figures where there are in the text
+- \usepackage{indentfirst}
+- \usepackage{float} # keep figures where there are in the text
+- \floatplacement{figure}{H} # keep figures where there are in the text
 ---
 
 # Цель работы
 
-Здесь приводится формулировка цели лабораторной работы. Формулировки
-цели для каждой лабораторной работы приведены в методических
-указаниях.
 
-Цель данного шаблона --- максимально упростить подготовку отчётов по
-лабораторным работам.  Модифицируя данный шаблон, студенты смогут без
-труда подготовить отчёт по лабораторным работам, а также познакомиться
-с основными возможностями разметки Markdown.
+Изучить идеологию и применение средств контроля версий.
+Освоить умения по работе с git.
 
-# Задание
-
-Здесь приводится описание задания в соответствии с рекомендациями
-методического пособия и выданным вариантом.
-
-# Теоретическое введение
-
-Здесь описываются теоретические аспекты, связанные с выполнением работы.
-
-Например, в табл. @tbl:std-dir приведено краткое описание стандартных каталогов Unix.
-
-: Описание некоторых каталогов файловой системы GNU Linux {#tbl:std-dir}
-
-| Имя каталога | Описание каталога                                                                                                          |
-|--------------|----------------------------------------------------------------------------------------------------------------------------|
-| `/`          | Корневая директория, содержащая всю файловую                                                                               |
-| `/bin `      | Основные системные утилиты, необходимые как в однопользовательском режиме, так и при обычной работе всем пользователям     |
-| `/etc`       | Общесистемные конфигурационные файлы и файлы конфигурации установленных программ                                           |
-| `/home`      | Содержит домашние директории пользователей, которые, в свою очередь, содержат персональные настройки и данные пользователя |
-| `/media`     | Точки монтирования для сменных носителей                                                                                   |
-| `/root`      | Домашняя директория пользователя  `root`                                                                                   |
-| `/tmp`       | Временные файлы                                                                                                            |
-| `/usr`       | Вторичная иерархия для данных пользователя                                                                                 |
-
-Более подробно об Unix см. в [@gnu-doc:bash;@newham:2005:bash;@zarrelli:2017:bash;@robbins:2013:bash;@tannenbaum:arch-pc:ru;@tannenbaum:modern-os:ru].
 
 # Выполнение лабораторной работы
 
-Описываются проведённые действия, в качестве иллюстрации даётся ссылка на иллюстрацию (рис. @fig:001).
+1. Я выполнила базовую настройку git
 
-![Название рисунка](image/placeimg_800_600_tech.jpg){#fig:001 width=70%}
+![терминал](image/1.png){ #fig:001 width=90% }
+
+![терминал](image/2.png){ #fig:002 width=90% }
+
+2. Я настроила вывод git
+
+![терминал](image/3.png){ #fig:003 width=90% }
+
+![редактирование](image/4.png){ #fig:004 width=90% }
+
+3. Я создала и сделала pgp ключ. SSH был настроен в прошлой лаболаторной
+
+![Ввод текста](image/5.png){ #fig:005 width=90% }
+
+![отранслирование текста](image/6.png){ #fig:006 width=90% }
+
+![Скачивание](image/7.png){ #fig:007 width=90% }
+
+4. Я создала репозиторий для работы.
+
+![Подключение](image/8.png){ #fig:008 width=90% }
+
+![Создание копии](image/9.png){ #fig:009 width=90% }
+
+5. Я прокоммитила и отправила файлы на гитхаб
+
+![отранслирование текста](image/10.png){ #fig:010 width=90% }
+
+![Исправления текста программы](image/11.png){ #fig:011 width=90% }
+
 
 # Выводы
 
-Здесь кратко описываются итоги проделанной работы.
+Мы приобрели практические навыкови работы в github
 
 # Список литературы{.unnumbered}
 
